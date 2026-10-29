@@ -40,3 +40,7 @@ class SqlReading(ReadingCreate):
 
 class MongoReading(ReadingCreate):
     id: str
+
+
+class HealthStatus(BaseModel):
+    status: str

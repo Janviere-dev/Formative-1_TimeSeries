@@ -263,6 +263,19 @@ def test_mongo_crud_latest_and_range():
     )
 
 
+def test_health_is_independent_of_readings():
+    health = client.get("/health")
+    assert health.status_code == 200
+    assert health.json() == {"status": "ok"}
+
+    root = client.get("/")
+    assert root.status_code == 200
+    assert root.json() == {
+        "sql_readings": "/sql/readings",
+        "mongo_readings": "/mongo/readings",
+    }
+
+
 def test_datetime_values_round_trip():
     moment = datetime(2012, 10, 2, 9, 0, 0)
     assert moment.isoformat() == "2012-10-02T09:00:00"
