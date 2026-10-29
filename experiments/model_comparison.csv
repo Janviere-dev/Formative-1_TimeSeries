@@ -1,0 +1,4 @@
+Experiment,Validation MAE,Validation RMSE,MAE reduction vs baseline (%),RMSE reduction vs baseline (%)
+Previous-hour baseline,558.58,794.13,0.0,0.0
+Initial Random Forest,190.0,287.16,65.99,63.84
+Tuned Random Forest,187.25,287.5,66.48,63.8
