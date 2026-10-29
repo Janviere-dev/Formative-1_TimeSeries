@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from api.config import settings
 from api.db import engine, get_readings_collection
 from api.models import Base
-from api.routers import mongo_readings, sql_readings
+from api.routers import health, mongo_readings, sql_readings
 
 
 @asynccontextmanager
@@ -19,6 +19,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Metro Interstate Traffic Volume API", lifespan=lifespan)
 app.include_router(sql_readings.router)
 app.include_router(mongo_readings.router)
+app.include_router(health.router)
 
 
 @app.get("/")
