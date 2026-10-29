@@ -1,0 +1,10 @@
+.venv
+**/__pycache__
+.pytest_cache
+data
+notebook.ipynb
+report
+script
+ERD
+mangodb
+.git
