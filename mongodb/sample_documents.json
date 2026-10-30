@@ -1,0 +1,284 @@
+{
+  "traffic_readings": [
+    {
+      "_id": "6ae376a08727114b7fbfee06",
+      "date_time": "2018-09-27T07:00:00",
+      "temp": 285.17,
+      "rain_1h": 0.0,
+      "snow_1h": 0.0,
+      "clouds_all": 90,
+      "traffic_volume": 6589,
+      "weather_main": "Rain",
+      "weather_description": "light rain",
+      "holiday": null
+    },
+    {
+      "_id": "6ae376a08727114b7fbfee07",
+      "date_time": "2018-09-27T07:00:00",
+      "temp": 285.17,
+      "rain_1h": 0.0,
+      "snow_1h": 0.0,
+      "clouds_all": 90,
+      "traffic_volume": 6589,
+      "weather_main": "Drizzle",
+      "weather_description": "light intensity drizzle",
+      "holiday": null
+    },
+    {
+      "_id": "6ae376a08727114b7fbfeb23",
+      "date_time": "2018-09-03T23:00:00",
+      "temp": 294.46,
+      "rain_1h": 0.25,
+      "snow_1h": 0.0,
+      "clouds_all": 90,
+      "traffic_volume": 1012,
+      "weather_main": "Drizzle",
+      "weather_description": "light intensity drizzle",
+      "holiday": "Labor Day"
+    }
+  ],
+  "daily_traffic": [
+    {
+      "_id": "2018-09-27",
+      "date": "2018-09-27T00:00:00",
+      "day_of_week": "Thursday",
+      "is_weekend": false,
+      "holiday": null,
+      "hours_recorded": 24,
+      "total_volume": 87845,
+      "avg_hourly_volume": 3660.2,
+      "peak": {
+        "hour": 7,
+        "traffic_volume": 6589
+      },
+      "avg_temp_k": 286.31,
+      "total_rain_mm": 0.5,
+      "total_snow_mm": 0.0,
+      "weather_hours": {
+        "Clouds": 15,
+        "Drizzle": 3,
+        "Rain": 4,
+        "Clear": 3
+      },
+      "hourly": [
+        {
+          "hour": 0,
+          "traffic_volume": 654,
+          "temp": 285.26,
+          "clouds_all": 40,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 1,
+          "traffic_volume": 421,
+          "temp": 285.8,
+          "clouds_all": 75,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 2,
+          "traffic_volume": 312,
+          "temp": 286.16,
+          "clouds_all": 40,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 3,
+          "traffic_volume": 373,
+          "temp": 286.74,
+          "clouds_all": 75,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 4,
+          "traffic_volume": 919,
+          "temp": 286.75,
+          "clouds_all": 75,
+          "weather": [
+            "Drizzle"
+          ]
+        },
+        {
+          "hour": 5,
+          "traffic_volume": 3002,
+          "temp": 286.49,
+          "clouds_all": 75,
+          "weather": [
+            "Rain"
+          ]
+        },
+        {
+          "hour": 6,
+          "traffic_volume": 5685,
+          "temp": 285.37,
+          "clouds_all": 1,
+          "weather": [
+            "Rain"
+          ]
+        },
+        {
+          "hour": 7,
+          "traffic_volume": 6589,
+          "temp": 285.17,
+          "clouds_all": 90,
+          "weather": [
+            "Rain",
+            "Drizzle"
+          ]
+        },
+        {
+          "hour": 8,
+          "traffic_volume": 5946,
+          "temp": 285.05,
+          "clouds_all": 1,
+          "weather": [
+            "Clear"
+          ]
+        },
+        {
+          "hour": 9,
+          "traffic_volume": 5181,
+          "temp": 285.5,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 10,
+          "traffic_volume": 4500,
+          "temp": 286.39,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 11,
+          "traffic_volume": 4670,
+          "temp": 286.88,
+          "clouds_all": 90,
+          "weather": [
+            "Rain"
+          ]
+        },
+        {
+          "hour": 12,
+          "traffic_volume": 4849,
+          "temp": 287.24,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 13,
+          "traffic_volume": 4787,
+          "temp": 287.61,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 14,
+          "traffic_volume": 4943,
+          "temp": 288.38,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 15,
+          "traffic_volume": 5892,
+          "temp": 288.28,
+          "clouds_all": 1,
+          "weather": [
+            "Drizzle"
+          ]
+        },
+        {
+          "hour": 16,
+          "traffic_volume": 6451,
+          "temp": 288.68,
+          "clouds_all": 75,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 17,
+          "traffic_volume": 5968,
+          "temp": 288.04,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 18,
+          "traffic_volume": 4498,
+          "temp": 287.5,
+          "clouds_all": 75,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 19,
+          "traffic_volume": 3419,
+          "temp": 286.91,
+          "clouds_all": 90,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 20,
+          "traffic_volume": 2856,
+          "temp": 285.75,
+          "clouds_all": 20,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 21,
+          "traffic_volume": 2649,
+          "temp": 284.77,
+          "clouds_all": 1,
+          "weather": [
+            "Clear"
+          ]
+        },
+        {
+          "hour": 22,
+          "traffic_volume": 2003,
+          "temp": 283.86,
+          "clouds_all": 75,
+          "weather": [
+            "Clouds"
+          ]
+        },
+        {
+          "hour": 23,
+          "traffic_volume": 1278,
+          "temp": 282.96,
+          "clouds_all": 1,
+          "weather": [
+            "Clear"
+          ]
+        }
+      ]
+    }
+  ]
+}
