@@ -1,0 +1,68 @@
+services:
+  - type: web
+    name: traffic-api
+    runtime: docker
+    plan: free
+    branch: feature/traffic-data-eda
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: MYSQL_HOST
+        fromService:
+          name: traffic-mysql
+          type: pserv
+          property: host
+      - key: MYSQL_PORT
+        value: "3306"
+      - key: MYSQL_USER
+        value: traffic
+      - key: MYSQL_PASSWORD
+        fromService:
+          name: traffic-mysql
+          type: pserv
+          envVarKey: MYSQL_PASSWORD
+      - key: MYSQL_DATABASE
+        value: traffic
+      - key: MONGO_HOST
+        fromService:
+          name: traffic-mongo
+          type: pserv
+          property: host
+      - key: MONGO_PORT
+        value: "27017"
+      - key: MONGO_DB
+        value: traffic
+
+  - type: pserv
+    name: traffic-mysql
+    runtime: docker
+    plan: 0.5c-512mb
+    branch: feature/traffic-data-eda
+    dockerfilePath: ./deploy/mysql/Dockerfile
+    dockerContext: .
+    disk:
+      name: mysql
+      mountPath: /var/lib/mysql
+      sizeGB: 1
+    envVars:
+      - key: MYSQL_DATABASE
+        value: traffic
+      - key: MYSQL_USER
+        value: traffic
+      - key: MYSQL_PASSWORD
+        generateValue: true
+      - key: MYSQL_ROOT_PASSWORD
+        generateValue: true
+
+  - type: pserv
+    name: traffic-mongo
+    runtime: docker
+    plan: 0.5c-512mb
+    branch: feature/traffic-data-eda
+    dockerfilePath: ./deploy/mongo/Dockerfile
+    dockerContext: .
+    disk:
+      name: mongo
+      mountPath: /data/db
+      sizeGB: 1

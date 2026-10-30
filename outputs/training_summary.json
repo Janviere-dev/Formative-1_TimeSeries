@@ -1,0 +1,16 @@
+{
+  "rows": 28871,
+  "train_rows": 20209,
+  "validation_rows": 4331,
+  "test_rows": 4331,
+  "best_params": {
+    "max_depth": 16,
+    "min_samples_leaf": 2,
+    "n_estimators": 250
+  },
+  "test_metrics": {
+    "MAE": 133.01021273414833,
+    "RMSE": 204.66276278322695,
+    "R2": 0.9893067267041095
+  }
+}
